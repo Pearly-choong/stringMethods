@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>String Methods!</title>
+  </head>
+  <body>
+
+    <div class="jumbotron container">
+      <h1>substr()method</h1>
+
+      <ul>
+        <li>Similar to slice()</li>
+        <li>The difference is that the second parameter specifies the length of the extracted part.</li>
+        <li>Returns the specified number of characters from the specified index from the given string.</li>
+      </ul>
+
+      <h4>Syntax:</h4>
+      <p>str.substr(start, length)</p>
+
+      <h4>Arguments:</h4>
+      <p>1st argument : <strong>start</strong> - defines the <strong>starting index</strong> from where the substring is to be extracted from the base string.</br>
+      2nd argument : <strong>length</strong> - defines the <strong>number of characters to be extracted</strong> starting from the start in the given string.</br>
+      If the second argument to the function is undefined, then all the characters from the start till the end of the length is extracted.</p>
+
+      <h4>Return value:</h4>
+      <p>This function returns a string that is the part of the given string. </br>
+      If the <strong>length is 0</strong> or <strong>negative</strong> value then it returns on empty string.</p>
+
+      </br>
+        <div class="bg-white p-3 mr-5">
+          <h5>EXAMPLES : </h5>
+          <p>It is a great day.</p>
+          <h6>(output 1) :</h6>
+          <p class="text-info" id="output1"></p>
+
+          <h6>(output 2) :</h6>
+          <p class="text-info" id="output2"></p>
+
+          <h6>(output 3) :</h6>
+          <p class="text-info" id="output3"></p>
+
+          <h6>(output 4) :</h6>
+          <p class="text-info" id="output4"></p>
+        </div>
+    </div>
+
+    <div class="jumbotron container">
+      <h1>replace()method</h1>
+
+      <ul>
+        <li><strong>Replace a specified value</strong> with another value in a string</li>
+        <li>Does not change the string it is called on. It <strong>returns a new string</strong>.</li>
+        <li>By default, it replace <strong>only the first</strong> match.</li>
+      <li>This function is <strong>case sensitive</strong>.</li>
+      </ul>
+
+      <h4>Syntax:</h4>
+      <p>str.replace(substr | regexp , newSubstr)</p>
+
+      <h4>Arguments:</h4>
+      <p>1st argument : <strong>substr | regexp</strong> - can be a <strong>string or the regular expression</strong> ( patterns used to match character combinations in strings ).
+      </br>2nd argument: <strong>newSubstr</strong> - is a <strong>string which will replace</strong> the content of the given string. The replacement also can be a function to be called for each match.</p>
+
+      <h4>Return value:</h4>
+      <p>It returns a new string with replaced items.</p>
+
+      </br>
+        <div class="bg-white p-3 mr-5">
+          <h5>EXAMPLE 1 : </h5>
+          <p>Please visit Microsoft!</p>
+          <h6>(output a) :</h6>
+          <p class="text-info" id="example1aReplace"></p>
+
+          <h6>(output b) :</h6>
+          <p class="text-info" id="example1bReplace"></p>
+          
+          <hr>
+
+          <h5>EXAMPLE 2 : </h5>
+          <p>Please visit Microsoft and Mirosoft!</p>
+          <h6>(output a) :</h6>
+          <p class="text-info" id="example2aReplace"></p>
+          
+          <h6>(output b) :</h6>
+          <p class="text-info" id="example2bReplace"></p>      
+        </div>
+    </div>   
+
+
+    <div class="jumbotron container">
+      <h1>concat()method</h1>
+
+      <ul>
+        <li>Joins two or more strings.</li>
+      </ul>
+
+      <h4>Syntax:</h4>
+      <p>str.concat(string2, string3, string4, ….., stringN)</p>
+
+      <h4>Arguments:</h4>
+      <p>The arguments to this function are the strings that need to be <strong>joined together</strong>.
+      </br>The number of arguments to this function is equal to the number of strings to be joined together.</p>
+
+      <h4>Return value:</h4>
+      <p>Returns a new string that is the combination of all the different strings passed to it as the argument.</p>
+
+      </br>
+        <div class="bg-white p-3 mr-5">
+          <h5>EXAMPLE 1 : </h5>
+          <h6>(output) :</h6>
+          <p class="text-info" id="example1Concat"></p>
+          
+          <hr>
+
+          <h5>EXAMPLE 2 : </h5>
+          <h6>(output) :</h6>
+          <p class="text-info" id="example2Concat"></p>
+          
+          <hr>
+
+          <h5>EXAMPLE 3 : </h5>
+          <h6>(output a) :</h6>
+          <p class="text-info" id="example3aConcat"></p>  
+          <h6>(output b) :</h6>
+          <p class="text-info" id="example3bConcat"></p>       
+        </div>
+    </div>     
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
